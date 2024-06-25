@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <script src="/script.js"></script>
+</head>
+
+<body>
+    <div class="container-luas">
+        <h1>
+            <span id="big-text">Hitung Luas persegi panjang</span>
+        </h1>
+        <input type="number" id="panjang" name="panjang" placeholder="input panjang">
+        <input type="number" id="lebar" name="lebar" placeholder="input Lebar">
+        <br><br>
+        <p class="output" id="output_1"></p>
+        <button onclick="luas_persegi(document.getElementById('panjang').value,document.getElementById('lebar').value)">Hitung</button>
+    </div>
+
+    <div class="container-keliling">
+    <h1>
+        <span id="big-text">Hitung Keliling persegi panjang</span>
+    </h1>
+    <input type="number" id="panjang_k" name="panjang_k" placeholder="input panjang">
+    <input type="number" id="lebar_k" name="lebar_k" placeholder="input Lebar">
+    <br><br>
+    <p class="output" id="output_2"></p>
+    <button onclick="keliling_persegi(document.getElementById('panjang_k').value,document.getElementById('lebar_k').value)">Hitung</button>
+     </div>
+
+     <div class="container-lingkaran">
+        <h1>
+            <span id="big-text">Hitung Lingkaran</span>
+        </h1>
+        <input type="number" id="jari_jari" name="jari_jari" placeholder="input Jari - Jari">
+        <br><br>
+        <div class="output-container">
+            <p class="output" id="output_d"></p>
+            <p class="output" id="output_l"></p>
+            <p class="output" id="output_k"></p>
+        </div>
+        <button onclick="lingkaran(document.getElementById('jari_jari').value)">Hitung</button>
+    </div>
+
+    <div class="container-segitiga">
+        <h1>
+            <span id="big-text">Hitung Segitiga</span>
+        </h1>
+        <input type="number" id="sudut_a" name="sudut_a" placeholder="input Sudut A">
+        <input type="number" id="sudut_b" name="sudut_b" placeholder="input Sudut B">
+        <br><br>
+        <p class="output" id="output_3"></p>
+        <button onclick="segitiga(document.getElementById('sudut_a').value,document.getElementById('sudut_b').value)">Hitung</button>
+    </div>
+
+    <div class="container-kalender">
+        <h1>
+            <span id="big-text">Hitung Selisih dua Tanggal</span>
+        </h1>
+        <input type="date" id="tgl_a" name="tgl_a" placeholder="input Tanggal A">
+        <input type="date" id="tgl_b" name="tgl_b" placeholder="input Tanggal B">
+        <br><br>
+        <p class="output" id="output_4"></p>
+        <button onclick="hitungSelisih(document.getElementById('tgl_a').value,document.getElementById('tgl_b').value)">Hitung</button>
+    </div>
+
+    <div class="container-konversi">
+        <h1>
+            <span id="big-text">Konversi Hari ke Tahun, Bulan, Hari</span>
+        </h1>
+        <input type="number" id="jumlahHari" name="jumlahHari" placeholder="Input Hari Contoh: 365" required>
+        <br><br>
+        <p class="konversi-output" id="hasilKonversi"></p>
+        <button onclick="konversiHari()">Konversi</button>
+    </div>
+</body>
+
+</html>
