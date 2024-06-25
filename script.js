@@ -73,5 +73,5 @@ function konversiHari() {
   let b = a % 30;
 
   let hasilKonversi = `${tahun} tahun, ${bulan} bulan, ${b} hari`;
-  document.getElementById('hasilKonversi').textContent = hasilKonversi;
+  document.getElementById('hasilKonversi').innerHTML = hasilKonversi;
 }
